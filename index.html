@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Frank Tech - WDD 131 Portfolio</title>
+    
+   
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals portfolio for Frank Yakan, a software developer student from Jinja, Uganda showcasing web projects and certificate courses.">
+    
+   
+    <meta name="author" content="Frank Yakan">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+     <link rel="stylesheet" href="styles/large.css">
+    <script src="script/navagation.js" defer></script>
+    <script src="script/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/house-door.svg" alt="logo image" width="50" height="50">
+                <h1><span>Frank Tech</span></h1>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span></button>
+        </div>
+
+        <nav>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Home </a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+          
+        <h1>Home</h1>
+        
+        <section class="main-section">
+            
+         
+            <div class="container-About">
+                <div class="content-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content-main">
+                 <p>
+                    <em> I'm a passionate coding student currently studying through BYU–Pathway.</em> <br>
+
+                    I live in Jinja, Uganda, and at 20 years old I'm building my skills in <br>
+                    web development and modern JavaScript. 
+                    I enjoy learning new technologies, solving problems, and reading to expand my knowledge. 
+                    My goal is to grow into a confident developer and create opportunities that can help me become employable in the tech world.
+                </p>
+
+                </div>
+            </div>
+
+            
+            <div class="profile">
+                <div class="profile-header">
+                    <h2>Student Photo</h2>
+                </div>
+                <div class="card-profile">
+                   
+                    <img src="images/photo.jpg" alt="Student Photo">
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="header-container">
+            <h1>Web Certificate Courses</h1>
+        </div>
+
+       
+        <div class="filter-buttons">
+            <button class="btn" onclick="filterCourses('all')">All</button>
+            <button class="btn" onclick="filterCourses('CSE')">CSE</button>
+            <button class="btn" onclick="filterCourses('WDD')">WDD</button>
+        </div>
+
+       
+        <div class="course-container" id="course-container">
+
+        </div>
+
+       
+        <div class="credits-display">
+            The total credits for courses listed above is <span id="total-credits">0</span>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="footer-bottom">
+            <div class="btn-bottom">
+            <a href="https://www.linkedin.com/yourprofile" target="_blank"><img width="100px" src="images/linkedin.svg" alt="linkedin"> </a>
+            <a href="https://github.com/yourprofile" target="_blank"> <img width="100px" src="images/github.svg" alt="github"> </a>
+            <a href="https://x.com/yourprofile" target="_blank"> <img width="100px" src="images/twitter-x.svg" alt="X (Twitter)"> </a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> YAKAN FRANK BYU <br> Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
