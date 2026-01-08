@@ -90,9 +90,8 @@ function displayCourses(courseList) {
 
         if (course.completed) {
             card.classList.add("completed");
-          
         }
-        //   document.querySelector("course-card").Style.backgroundColor = "red"
+
         card.textContent = `${course.subject} ${course.number}`;
         courseContainer.appendChild(card);
     });
@@ -119,16 +118,17 @@ function calculateTotal(courseList) {
 
 filterCourses('all');
 
-// 1. Select the HTML elements we need
+document.querySelector("#all").addEventListener("click", () => {
+    filterCourses("all");
+});
 
+document.querySelector("#cse").addEventListener("click", () => {
+    filterCourses("CSE");
+});
 
-
-
-
-
-
-
-
+document.querySelector("#wdd").addEventListener("click", () => {
+    filterCourses("WDD");
+});
 
 const yearSpan = document.querySelector('#year');
 const lastModifiedSpan = document.querySelector('#lastModified');
