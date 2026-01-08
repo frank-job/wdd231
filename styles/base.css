@@ -1,4 +1,4 @@
-/* * {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: white;
+  font-family: 'Courier Prime', monospace;
 }
 
-h1 {
+/* .header-top span{
     margin-bottom: 20px;
-}
+} */
 
 
    /* 2. HEADER & NAVIGATION */
@@ -38,8 +38,10 @@ header {
 .header-top .logo img {
     font-size: 35px;
 }
-.header-top .logo h1 {
-    padding-top: 25px;
+.header-top .logo span {
+    padding-top: 15px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* .logo-box {
     border: 1px solid black;
