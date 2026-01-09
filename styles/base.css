@@ -9,12 +9,7 @@ body {
   font-family: 'Courier Prime', monospace;
 }
 
-/* .header-top span{
-    margin-bottom: 20px;
-} */
 
-
-   /* 2. HEADER & NAVIGATION */
  
 header {
     margin: 20px;
@@ -28,7 +23,7 @@ header {
     background-color: white;
 }
 
-/* Logo */
+
 .logo {
     font-size: 15px;
     display: flex;
@@ -43,15 +38,7 @@ header {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
 }
-/* .logo-box {
-    border: 1px solid black;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-} */
+
 
 
 nav ul {
@@ -79,12 +66,11 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Active Link Style */
+
 .active a {
     background-color: #666;
 }
 
-/* Hamburger Button */
 #hamburgerBtn {
     background: none;
     border: none;
@@ -106,22 +92,23 @@ main {
     border-radius: 10px;
 }
 
-/* Common Card Styles (About & Profile) */
+
 .container-About, .profile {
     height: 400px;
     color: white;
+    border-radius: 5px;
     background-color: #555;
-    /* box-shadow: 3px 10px 4px 3px #ccc; */
+
 }
 
-/* Content inside Cards */
+
 .content-header, .profile-header {
     border-radius: 5px;
     background-color: #222;
     color: white;
-    padding: 2px;
+    padding: 1px;
     text-align: center;
-    /* width: 100%; */
+  
 }
 
 .content-main, .card-profile {
@@ -137,10 +124,11 @@ main {
    /* 4. PROFILE SECTION */
  
 .card-profile {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 20px auto; 
-    background: #f0f0f0;
+    box-shadow: 3px 10px 4px 3px #ccc; 
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,26 +150,30 @@ main {
 }
 
 
-   /* 5. COURSE SECTION */
+  
   
 .header-container h2 {
+   
     margin-top: 20px;
+  
     text-align: center;
     background-color: #222;
     color: #ddd;
     border-radius: 5px;
     padding: 10px;
+    box-shadow: 3px 10px 4px 3px #ccc;
 }
 
-.header-container h1:hover {
+.header-container h2:hover {
     background-color: #333;
 }
 
-/* Filter Buttons */
+
 .filter-buttons {
+
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: 25px;
 }
 
 .btn {
@@ -199,8 +191,9 @@ main {
     background-color: #ccc;
 }
 
-/* Course Cards */
+
 .course-card {
+    margin-top: 20px;
     background-color: #ccc;
     padding: 15px;
     text-align: center;
@@ -211,7 +204,7 @@ main {
     color: #333;
 }
 
-/* Completed Course Style */
+
 .course-card.completed {
     background-color: #d4edda;
     border-color: #c3e6cb;
@@ -230,7 +223,7 @@ main {
 }
 
 
-   /* 6. FOOTER */
+  
 
 footer {
     text-align: center;
@@ -247,12 +240,7 @@ footer {
     font-size: 20px;
 }
 
-    /* transition: transform 0.3s;
-}
 
-.card-profile:hover {
-    transform: scale(1.05);
-} */
 .footer-bottom {
     display: flex;
     justify-content: center;
@@ -262,6 +250,7 @@ footer {
     margin-top: 20px;
 }
 .btn-bottom {
+    margin-bottom: 20px;
     transition: transform 0.3s;
     box-shadow: 10px 15px 14px 13px #ccc;
 }
