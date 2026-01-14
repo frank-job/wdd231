@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Timbuktu Traders",
+      "address": "12 Caravan Road, Timbuktu",
+      "phone": "+223 70 123 456",
+      "website": "https://timbuktutraders.com",
+      "image": "images/traders.jpg",
+      "membershipLevel": 3,
+      "info": "Exporters of fine textiles and crafts."
+    },
+    {
+      "name": "Sahara Solar Solutions",
+      "address": "45 Sun Avenue, Timbuktu",
+      "phone": "+223 70 987 654",
+      "website": "https://saharasolar.com",
+      "image": "images/solar.jpg",
+      "membershipLevel": 2,
+      "info": "Providing sustainable energy for the desert."
+    },
+    {
+      "name": "Camel Logistics",
+      "address": "88 Dune Street, Timbuktu",
+      "phone": "+223 70 555 123",
+      "website": "https://camellogistics.com",
+      "image": "images/camel.jpg",
+      "membershipLevel": 1,
+      "info": "Reliable transport across the region."
+    },
+    {
+      "name": "Oasis Hotel & Spa",
+      "address": "1 Palm Grove, Timbuktu",
+      "phone": "+223 70 444 333",
+      "website": "https://oasishotel.com",
+      "image": "images/hotel.jpg",
+      "membershipLevel": 3,
+      "info": "Luxury accommodation for travelers."
+    },
+    {
+      "name": "Desert Rose Cafe",
+      "address": "10 Market Square, Timbuktu",
+      "phone": "+223 70 222 111",
+      "website": "https://desertrose.com",
+      "image": "images/cafe.jpg",
+      "membershipLevel": 2,
+      "info": "Best coffee and local pastries in town."
+    },
+    {
+      "name": "Mali Tech Hub",
+      "address": "3 Innovation Dr, Timbuktu",
+      "phone": "+223 70 666 777",
+      "website": "https://malitech.com",
+      "image": "images/tech.jpg",
+      "membershipLevel": 1,
+      "info": "Coworking space for digital nomads."
+    },
+    {
+      "name": "Golden Sands Construction",
+      "address": "55 Builder Lane, Timbuktu",
+      "phone": "+223 70 888 999",
+      "website": "https://goldensands.com",
+      "image": "images/construction.jpg",
+      "membershipLevel": 3,
+      "info": "Building the future of Timbuktu."
+    }
+  ]
+}
