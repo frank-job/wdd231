@@ -22,13 +22,13 @@ hamButton.addEventListener('click', () => {
     }
 });
 
-// 1. SELECT ELEMENTS
+
 const membersContainer = document.querySelector('#members-container');
 const gridBtn = document.querySelector('#grid-btn');
 const listBtn = document.querySelector('#list-btn');
 const url = 'data/members.json';
 
-// 2. FETCH DATA
+
 async function getMembers() {
     try {
         const response = await fetch('data/members.json');
@@ -84,7 +84,7 @@ const displayMembers = (members) => {
     });
 }
 
-// 4. TOGGLE BUTTONS
+
 gridBtn.addEventListener('click', () => {
     membersContainer.classList.add('grid-view');
     membersContainer.classList.remove('list-view');
@@ -95,7 +95,7 @@ listBtn.addEventListener('click', () => {
     membersContainer.classList.remove('grid-view');
 });
 
-// Start
+
 getMembers();
 
 
