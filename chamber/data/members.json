@@ -2,16 +2,16 @@
   "companies": [
     {
       "name": "Timbuktu Traders",
-      "address": "12 Caravan Road, Timbuktu",
+      "address": "12 Caravan Road, jinja",
       "phone": "+223 70 123 456",
-      "website": "https://timbuktutraders.com",
+      "website": "https://jinjatraders.com",
       "image": "images/market.jpg",
       "membershipLevel": 3,
       "info": "Exporters of fine textiles and crafts."
     },
     {
       "name": "Sahara Solar Solutions",
-      "address": "45 Sun Avenue, Timbuktu",
+      "address": "45 Sun Avenue, lakeside view",
       "phone": "+223 70 987 654",
       "website": "https://saharasolar.com",
       "image": "images/solor.jpg",
@@ -20,7 +20,7 @@
     },
     {
       "name": "Camel Logistics",
-      "address": "88 Dune Street, Timbuktu",
+      "address": "88 Dune Street, internation side",
       "phone": "+223 70 555 123",
       "website": "https://camellogistics.com",
       "image": "images/logistic.jpg",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Oasis Hotel & Spa",
-      "address": "1 Palm Grove, Timbuktu",
+      "address": "1 Palm Grove, jinja",
       "phone": "+223 70 444 333",
       "website": "https://oasishotel.com",
       "image": "images/hotel.jpg",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Desert Rose Cafe",
-      "address": "10 Market Square, Timbuktu",
+      "address": "10 Market Square, jinja",
       "phone": "+223 70 222 111",
       "website": "https://desertrose.com",
       "image": "images/cafe.jpg",
@@ -47,7 +47,7 @@
     },
     {
       "name": "Mali Tech Hub",
-      "address": "3 Innovation Dr, Timbuktu",
+      "address": "3 Innovation Dr, lakeside mtns",
       "phone": "+223 70 666 777",
       "website": "https://malitech.com",
       "image": "images/tech.jpg",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Golden Sands Construction",
-      "address": "55 Builder Lane, Timbuktu",
+      "address": "55 Builder Lane, jinja road",
       "phone": "+223 70 888 999",
       "website": "https://goldensands.com",
       "image": "images/construction.jpg",
