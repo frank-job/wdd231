@@ -5,7 +5,7 @@
       "address": "12 Caravan Road, Timbuktu",
       "phone": "+223 70 123 456",
       "website": "https://timbuktutraders.com",
-      "image": "images/traders.jpg",
+      "image": "images/market.jpg",
       "membershipLevel": 3,
       "info": "Exporters of fine textiles and crafts."
     },
@@ -14,7 +14,7 @@
       "address": "45 Sun Avenue, Timbuktu",
       "phone": "+223 70 987 654",
       "website": "https://saharasolar.com",
-      "image": "images/solar.jpg",
+      "image": "images/solor.jpg",
       "membershipLevel": 2,
       "info": "Providing sustainable energy for the desert."
     },
@@ -23,7 +23,7 @@
       "address": "88 Dune Street, Timbuktu",
       "phone": "+223 70 555 123",
       "website": "https://camellogistics.com",
-      "image": "images/camel.jpg",
+      "image": "images/logistic.jpg",
       "membershipLevel": 1,
       "info": "Reliable transport across the region."
     },
