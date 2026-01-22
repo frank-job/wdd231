@@ -443,9 +443,10 @@ footer {
 
 /* Spotlight Section */
 .spotlights {
-    position: relative; /* allows absolute positioning inside */ 
-    width: 100%; 
-    max-width: 900px; 
+    position: relative;
+    /* allows absolute positioning inside */
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
   
     /* margin: 20px 20px; */
