@@ -1,0 +1,13 @@
+@media (min-width: 900px) {
+    /* Make Spotlights sit side-by-side */
+    .spotlight-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .spotlight-card {
+        flex: 1; /* Each takes equal width */
+        margin-bottom: 0;
+    }
+}
