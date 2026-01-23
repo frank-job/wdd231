@@ -35,6 +35,7 @@ async function apiFetch() {
     }
 }
 
+
 function displayResults(data) {
     currentTemp.innerHTML = Math.round(data.main.temp);
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
