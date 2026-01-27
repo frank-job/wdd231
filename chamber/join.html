@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory - WDD 231</title>
+
+
+
+    <meta name="description"
+        content="frontend end 1 for Frank Yakan, a software developer student from Jinja, Uganda showcasing web projects and certificate courses.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="author" content="Frank Yakan">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="WDD 231 | Chamber Directory Page" />
+    <meta property="og:description"
+        content="Explore our Chamber Directory showcasing local businesses, services, and community resources." />
+    <meta property="og:image" content="https://frank-job.github.io/wdd231/images/social-preview.jpg" />
+    <meta property="og:url" content="https://byui-cse.github.io/wdd231-ww-course/week02/assignment-02.html" />
+    <meta property="og:type" content="website" />
+
+    <script src="scripts/body.js" defer></script>
+    <!-- <script src="scripts/weather.js" defer></script> -->
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/lager.css">
+    
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+
+            <span>Philip Business</span>
+
+            <button id="hamburgerBtn"><span>&#9776;</span></button>
+        </div>
+
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+
+
+    <h1 class="joinh1">Join Our Chamber</h1>
+
+    <form action="thankyou.html" method="get">
+        
+        <label> First Name: 
+            <input type="text" name="firstName" id="firstName" required autocomplete="given-name"> 
+        </label>
+        
+        <label> Last Name: 
+            <input type="text" name="lastName" id="lastName" required autocomplete="family-name"> 
+        </label>
+        
+        <label> Organisation Title: 
+            <input type="text" name="organisationTitle" id="organisationTitle" 
+                   pattern="[a-zA-Z\s\-]{7,}" title="Minimum 7 letters, hyphens, or spaces">
+        </label>
+        
+        <label> Email Address: 
+            <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@email.com"> 
+        </label>
+        
+        <label> Mobile Phone Number: 
+            <input type="tel" name="mobilePhone" id="mobilePhone" required autocomplete="tel"> 
+        </label>
+        
+        <label> Business/Organisation Name: 
+            <input type="text" name="businessName" id="businessName" required autocomplete="organization"> 
+        </label>
+        
+        <label> Membership Level: 
+            <select name="membershipLevel" id="membershipLevel" required> 
+                <option value="" disabled selected>Select a Level</option>
+                <option value="np">NP Membership (Non-Profit, no fee)</option> 
+                <option value="bronze">Bronze Membership</option> 
+                <option value="silver">Silver Membership</option> 
+                <option value="gold">Gold Membership</option> 
+            </select> 
+        </label>
+        
+        <label> Business Description: 
+            <textarea name="description" id="description" rows="5"></textarea> 
+        </label>
+        
+        
+        <input type="hidden" name="timestamp" id="timestamp" value="">
+        
+        <input type="submit" value="Submit Membership Form" class="btn"> 
+    </form>
+</main>
+
+
+<script>
+    document.getElementById('timestamp').value = new Date().toLocaleString();
+</script>
+    <footer>
+        <div class="footer-bottom">
+
+            <div class="btn-bottom">
+                <img width="50" src="images/linkedin.svg" alt="linkedin">
+                <img width="50" src="images/github.svg" alt="github">
+                <img width="50" src="images/twitter-x.svg" alt="X (Twitter)">
+            </div>
+
+        </div>
+
+
+        <div class="footer-content">
+
+            <p>&copy; <span id="year"></span> YAKAN FRANK BYU <br> Last Modified: <span id="lastModified"></span></p>
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
+
