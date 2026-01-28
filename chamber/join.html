@@ -55,31 +55,34 @@
             </ul>
         </nav>
     </header>
-    <main>
-
-
+    <main class="thankyou-main">
+        <h1>Application Received!</h1>
+        <p>Thank you for applying for membership. We have received the following details:</p>
 
 
         <h1 class="joinh1">Join Our Chamber</h1>
 
-        <la action="thankyou.html" method="get">
+        <form action="thankyou.html" method="get">
 
             <label> First Name:
                 <input type="text" name="firstName" id="firstName" title="First Name" required
                     autocomplete="given-name">
             </label>
 
-            <label for="lastName">Last Name:
-                <input type="text" id="lastName" name="lastName" title="Last Name" required autocomplete="family-name">
+            <label> Last Name:
+                <input type="text" name="lastName" id="lastName" title="Last Name" required autocomplete="family-name">
             </label>
 
-            <label for="orgTitle">Organization Title
-                <input type="text" id="orgTitle" name="orgTitle" title="Organization Title" required autocomplete="organization-title">
-            </label>
+            <label> Organization Title:
 
+                <input type="text" name="organisationTitle" id="organisationTitle"
+                    title="Organization Title (7+ characters, letters/hyphens)" autocomplete="organization-title"
+                    pattern="[a-zA-Z\s\-]{7,}">
+            </label>
 
             <label> Email Address:
-                <input type="email" name="email" id="email" required autocomplete="email" title="Email Address" placeholder="example@email.com">
+                <input type="email" name="email" id="email" title="Email Address" required autocomplete="email"
+                    placeholder="example@email.com">
             </label>
 
             <label> Mobile Phone Number:
@@ -93,7 +96,7 @@
             </label>
 
             <label> Membership Level:
-                <select name="membershipLevel" id="membershipLevel" required>
+                <select name="membershipLevel" id="membershipLevel" title="Select Membership Level" required>
                     <option value="" disabled selected>Select a Level</option>
                     <option value="np">NP Membership (Non-Profit, no fee)</option>
                     <option value="bronze">Bronze Membership</option>
@@ -103,14 +106,15 @@
             </label>
 
             <label> Business Description:
-                <textarea name="description" id="description" title="business description" rows="5"></textarea>
+                <textarea name="description" id="description" title="Business Description" rows="5"></textarea>
             </label>
-
 
             <input type="hidden" name="timestamp" id="timestamp" value="">
 
             <input type="submit" value="Submit Membership Form" class="btn">
-            </form>
+
+        </form>
+
     </main>
 
 
