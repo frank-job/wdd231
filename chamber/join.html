@@ -31,7 +31,7 @@
     <script src="scripts/navigation.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/lager.css">
-    
+
     <link rel="stylesheet" href="styles/thankyou.css">
     <script src="scripts/thankyou.js" defer></script>
 </head>
@@ -60,56 +60,62 @@
 
 
 
-    <h1 class="joinh1">Join Our Chamber</h1>
+        <h1 class="joinh1">Join Our Chamber</h1>
 
-    <form action="thankyou.html" method="get">
-        
-        <label> First Name: 
-            <input type="text" name="firstName" id="firstName" title="First Name" required autocomplete="given-name"> 
-        </label>
-        
-        <label> Last Name: 
+        <form action="thankyou.html" method="get">
+
+            <label> First Name:
+                <input type="text" name="firstName" id="firstName" title="First Name" required
+                    autocomplete="given-name">
+            </label>
+
+            <label for="orgDescription">Organization Description</label>
+            <input type="text" id="orgDescription" name="orgDescription" title="Organization Description" required>
+
+
+            <!-- <label> Last Name: 
             <input type="text" name="lastName" id="lastName" title="Last Name" required autocomplete="family-name"> 
         </label>
         
-        <label> Organisation Title: 
-            <input type="text" name="organisationTitle" id="organisationTitle"  required autocomplete="organization-title"
-                   pattern="[a-zA-Z\s\-]{7,}" title="Minimum 7 letters, hyphens, or spaces">
-        </label>
-        <!-- <input type="text" pattern="[s\-]{7,}" title="Minimum 7 letters"> -->
+       <input type="text" pattern="[s\-]{7,}" title="Minimum 7 letters"> -->
 
-        <label> Email Address: 
-            <input type="email" name="email" id="email" required autocomplete="email" title="Email Address" placeholder="example@email.com"> 
-        </label>
-        
-        <label> Mobile Phone Number: 
-            <input type="tel" name="mobilePhone" id="mobilePhone" title="Mobile Phone Number" required autocomplete="tel"> 
-        </label>
-        
-        <label> Business/Organisation Name: 
-            <input type="text" name="businessName" id="businessName" title="Business/Organisation Name" required autocomplete="organization"> 
-        </label>
-        
-        <label> Membership Level: 
-            <select name="membershipLevel" id="membershipLevel" required> 
-                <option value="" disabled selected>Select a Level</option>
-                <option value="np">NP Membership (Non-Profit, no fee)</option> 
-                <option value="bronze">Bronze Membership</option> 
-                <option value="silver">Silver Membership</option> 
-                <option value="gold">Gold Membership</option> 
-            </select> 
-        </label>
-        
-        <label> Business Description: 
-            <textarea name="description" id="description" title="business description" rows="5"></textarea> 
-        </label>
-        
-        
-        <input type="hidden" name="timestamp" id="timestamp" value="">
-        
-        <input type="submit" value="Submit Membership Form" class="btn"> 
-    </form>
-</main>
+            <!-- <input type="text" pattern="[s\-]{7,}" title="Minimum 7 letters"> -->
+
+            <label> Email Address:
+                <input type="email" name="email" id="email" required autocomplete="email" title="Email Address"
+                    placeholder="example@email.com">
+            </label>
+
+            <label> Mobile Phone Number:
+                <input type="tel" name="mobilePhone" id="mobilePhone" title="Mobile Phone Number" required
+                    autocomplete="tel">
+            </label>
+
+            <label> Business/Organisation Name:
+                <input type="text" name="businessName" id="businessName" title="Business/Organisation Name" required
+                    autocomplete="organization">
+            </label>
+
+            <label> Membership Level:
+                <select name="membershipLevel" id="membershipLevel" required>
+                    <option value="" disabled selected>Select a Level</option>
+                    <option value="np">NP Membership (Non-Profit, no fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label> Business Description:
+                <textarea name="description" id="description" title="business description" rows="5"></textarea>
+            </label>
+
+
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+
+            <input type="submit" value="Submit Membership Form" class="btn">
+        </form>
+    </main>
 
 
 
@@ -137,4 +143,3 @@
 </body>
 
 </html>
-
