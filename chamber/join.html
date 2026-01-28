@@ -65,28 +65,28 @@
     <form action="thankyou.html" method="get">
         
         <label> First Name: 
-            <input type="text" name="firstName" id="firstName" required autocomplete="given-name"> 
+            <input type="text" name="firstName" id="firstName" title="First Name" required autocomplete="given-name"> 
         </label>
         
         <label> Last Name: 
-            <input type="text" name="lastName" id="lastName" required autocomplete="family-name"> 
+            <input type="text" name="lastName" id="lastName" title="Last Name" required autocomplete="family-name"> 
         </label>
         
         <label> Organisation Title: 
-            <input type="text" name="organisationTitle" id="organisationTitle" 
+            <input type="text" name="organisationTitle" id="organisationTitle" title="Organisation Title" required autocomplete="organization-title"
                    pattern="[a-zA-Z\s\-]{7,}" title="Minimum 7 letters, hyphens, or spaces">
         </label>
         
         <label> Email Address: 
-            <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@email.com"> 
+            <input type="email" name="email" id="email" required autocomplete="email" title="Email Address" placeholder="example@email.com"> 
         </label>
         
         <label> Mobile Phone Number: 
-            <input type="tel" name="mobilePhone" id="mobilePhone" required autocomplete="tel"> 
+            <input type="tel" name="mobilePhone" id="mobilePhone" title="Mobile Phone Number" required autocomplete="tel"> 
         </label>
         
         <label> Business/Organisation Name: 
-            <input type="text" name="businessName" id="businessName" required autocomplete="organization"> 
+            <input type="text" name="businessName" id="businessName" title="Business/Organisation Name" required autocomplete="organization"> 
         </label>
         
         <label> Membership Level: 
@@ -111,9 +111,7 @@
 </main>
 
 
-<script>
-    document.getElementById('timestamp').value = new Date().toLocaleString();
-</script>
+
     <footer>
         <div class="footer-bottom">
 

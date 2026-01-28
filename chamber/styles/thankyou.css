@@ -1,9 +1,9 @@
-
 @keyframes slideUpFade {
     0% {
         opacity: 0;
         transform: translateY(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -24,16 +24,16 @@
     margin-top: 30px;
     padding: 30px;
     text-align: left;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-animation: slideUpFade 0.8s ease-out forwards;
-     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+    box-shadow: 10 4px 10px rgba(60, 20, 20, 0.1);
+    animation: slideUpFade 0.8s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
 }
 
 
 .results-card:hover {
-    transform: translateY(-10px); /* Lifts up */
-    box-shadow: 0 15px 30px rgba(29, 84, 109, 0.2); /* Soft Blue Shadow */
-    border-color: var(--accent); /* Border turns Teal/Gold */
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+    border-color: var(--accent);
 }
 
 .results-card p {
@@ -42,23 +42,21 @@ animation: slideUpFade 0.8s ease-out forwards;
     border-bottom: 1px solid #eee;
     color: var(--text);
     display: flex;
-    justify-content: space-between; /* Pushes label left, value right */
+    justify-content: space-between;
 }
 
 .results-card strong {
-    color: var(--secondary); 
-    text-transform: capitalize; 
+    color: var(--secondary);
+    text-transform: capitalize;
 }
 
-/* =========================
-   FORM STYLING
-   ========================= */
+
 main .joinh1 {
     padding-top: 10px;
     text-align: center;
     font-size: 2rem;
     color: var(--primary);
-    animation: slideUpFade 0.6s ease-out; /* Animates the title too */
+    animation: slideUpFade 0.6s ease-out;
 }
 
 form {
@@ -67,17 +65,17 @@ form {
     margin: 30px auto;
     padding: 40px;
     border-radius: 12px;
-    
-    /* Floating Effect */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-top: 5px solid var(--accent);
-    
-    /* Animation: Slide Up slightly later than title */
+
+
     animation: slideUpFade 0.8s ease-out 0.2s forwards;
-    opacity: 0; /* Hidden until animation starts */
+    opacity: 0;
 }
 
-/* LABELS */
+
 form label {
     display: block;
     margin-bottom: 15px;
@@ -85,9 +83,17 @@ form label {
     font-weight: 600;
     font-size: 0.95rem;
     position: relative;
+    border-left-color: #333;
 }
 
-/* INPUTS */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left-color: #333;
+}
+
+
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
@@ -97,28 +103,29 @@ form textarea {
     width: 100%;
     padding: 12px 15px;
     margin-top: 8px;
-    border: 2px solid #e0e0e0; /* Subtle border */
+    border: 2px solid #e0e0e0;
     border-radius: 8px;
     background-color: #f9f9f9;
     font-size: 1rem;
     color: #333;
-    
-    /* Smooth transition for focus */
+
+
     transition: all 0.3s ease;
 }
 
-/* FOCUS EFFECT: Expand and Color Change */
-form input:focus, 
-form select:focus, 
+
+form input:focus,
+form select:focus,
 form textarea:focus {
+    border-left-color: #333;
     outline: none;
     border-color: var(--secondary);
     background-color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transform: scale(1.02); /* Expands slightly when you click it */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transform: scale(1.02);
 }
 
-/* SUBMIT BUTTON */
+
 form input[type="submit"] {
     width: 100%;
     padding: 15px;
@@ -126,32 +133,29 @@ form input[type="submit"] {
     background-color: var(--secondary);
     color: white;
     border: none;
-    border-radius: 50px; /* Pill shape */
+    border-radius: 50px;
     font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    
-    /* Transition */
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy effect */
+
+
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* HOVER EFFECT: Bounce and Color */
+
 form input[type="submit"]:hover {
     background-color: var(--accent);
     color: var(--primary);
-    transform: scale(1.05); /* Grows bigger */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* CLICK EFFECT */
 form input[type="submit"]:active {
-    transform: scale(0.95); /* Shrinks when clicked */
+    transform: scale(0.95);
 }
-
-/* INVALID INPUT SHAKE (Optional: Red border) */
-form input:invalid:not(:placeholder-shown) {
-    border-color: #e74c3c;
-    background-color: #fff8f8;
-}
+    form input:invalid:not(:placeholder-shown) {
+        /* border-color: #e74c3c; */
+        background-color: #fff8f8;
+    }
