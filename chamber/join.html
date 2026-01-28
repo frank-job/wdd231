@@ -73,10 +73,11 @@
         </label>
         
         <label> Organisation Title: 
-            <input type="text" name="organisationTitle" id="organisationTitle" title="Organisation Title" required autocomplete="organization-title"
+            <input type="text" name="organisationTitle" id="organisationTitle"  required autocomplete="organization-title"
                    pattern="[a-zA-Z\s\-]{7,}" title="Minimum 7 letters, hyphens, or spaces">
         </label>
-        
+        <!-- <input type="text" pattern="[s\-]{7,}" title="Minimum 7 letters"> -->
+
         <label> Email Address: 
             <input type="email" name="email" id="email" required autocomplete="email" title="Email Address" placeholder="example@email.com"> 
         </label>
@@ -100,7 +101,7 @@
         </label>
         
         <label> Business Description: 
-            <textarea name="description" id="description" rows="5"></textarea> 
+            <textarea name="description" id="description" title="business description" rows="5"></textarea> 
         </label>
         
         
