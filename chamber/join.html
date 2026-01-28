@@ -62,29 +62,24 @@
 
         <h1 class="joinh1">Join Our Chamber</h1>
 
-        <form action="thankyou.html" method="get">
+        <la action="thankyou.html" method="get">
 
             <label> First Name:
                 <input type="text" name="firstName" id="firstName" title="First Name" required
                     autocomplete="given-name">
             </label>
 
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" autocomplete="family-name" title="Last Name" required>
+            <label for="lastName">Last Name:
+                <input type="text" id="lastName" name="lastName" title="Last Name" required autocomplete="family-name">
+            </label>
 
-            <label for="orgTitle">Organization Title</label>
-            <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title"
-                title="Organization Title" required>
-
-
-
-
-
+            <label for="orgTitle">Organization Title
+                <input type="text" id="orgTitle" name="orgTitle" title="Organization Title" required autocomplete="organization-title">
+            </label>
 
 
             <label> Email Address:
-                <input type="email" name="email" id="email" required autocomplete="email" title="Email Address"
-                    placeholder="example@email.com">
+                <input type="email" name="email" id="email" required autocomplete="email" title="Email Address" placeholder="example@email.com">
             </label>
 
             <label> Mobile Phone Number:
@@ -115,7 +110,7 @@
             <input type="hidden" name="timestamp" id="timestamp" value="">
 
             <input type="submit" value="Submit Membership Form" class="btn">
-        </form>
+            </form>
     </main>
 
 
