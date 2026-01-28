@@ -156,6 +156,6 @@ form input[type="submit"]:active {
     transform: scale(0.95);
 }
     form input:invalid:not(:placeholder-shown) {
-        /* border-color: #e74c3c; */
+        border-color: #e74c3c;
         background-color: #fff8f8;
     }
