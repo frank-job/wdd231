@@ -1,0 +1,183 @@
+/* 1. CONTAINER (Just holds them) */
+#business-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    /* Basic responsive columns */
+    grid-template-columns: 1fr;
+}
+
+/* 2. CARD SETUP (Assign names to children) */
+.business-card {
+    perspective: 1000px;
+    display: grid;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+
+}
+
+.business-card h2 {
+    grid-area: title;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.business-card figure {
+    grid-area: img;
+    margin: 0;
+}
+
+.business-card address {
+    grid-area: addr;
+    font-style: normal;
+    font-weight: bold;
+    color: #555;
+}
+
+.business-card p {
+    grid-area: desc;
+}
+
+.business-card button {
+    grid-area: btn;
+    padding: 10px 20px;
+    justify-self: start;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.business-card button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.business-card img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.business-card img:hover {
+    transform: scale(1.05);
+}
+
+/* --- LAYOUT 1: SMALL SCREENS (320px - 640px) --- */
+/* Simple Vertical Stack */
+@media (max-width: 640px) {
+    .business-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "img"
+            "addr"
+            "desc"
+            "btn";
+    }
+}
+
+/* --- LAYOUT 2: MEDIUM SCREENS (641px - 1024px) --- */
+/* Image on Left, Text on Right */
+@media (min-width: 641px) and (max-width: 1024px) {
+    #business-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Keep cards full width */
+
+    .business-card {
+        grid-template-columns: 200px 1fr 1fr;
+        /* Image column + 2 Text columns */
+        grid-template-areas:
+            "img title title"
+            "img addr addr"
+            "img desc desc"
+            "img btn btn";
+        align-items: start;
+
+    }
+
+    .business-card img {
+        height: 100%;
+        max-height: 250px;
+    }
+}
+
+/* --- LAYOUT 3: LARGE SCREENS (1025px+) --- */
+/* Cards in Grid, but layout changes again */
+@media (min-width: 1025px) {
+    #business-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 Cards per row */
+    }
+
+    .business-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "img desc"
+            "img addr"
+            "btn btn";
+        /* Button spans full width at bottom */
+    }
+}
+
+.discover-info {
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.discover-info .discover-p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    animation: fadeIn 1s ease-in-out;
+}
+.discover-info .dish3 { 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    color: #34495e; 
+    margin-top: 2rem;
+     margin-bottom: 1rem; 
+     text-align: left; 
+     position: relative;
+}
+
+.discover-info .dish3::before { 
+    content: "★"; 
+    color: #e67e22; 
+    margin-right: 0.5rem; 
+} /* Fade-in animation */ 
+@keyframes fadeIn { 
+    from { opacity: 0; 
+        transform: translateY(10px); 
+    } 
+    to { opacity: 1; 
+        transform: translateY(0); 
+    } 
+to { opacity: 1; transform: translateY(0); } }
+
+#visit-message {
+    background-color: var(--primary); /* Uses your Navy color */
+    color: var(--white);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid var(--accent); /* Gold accent */
+}
