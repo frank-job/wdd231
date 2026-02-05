@@ -1,13 +1,13 @@
-/* 1. CONTAINER (Just holds them) */
+
 #business-container {
     display: grid;
     gap: 20px;
     padding: 20px;
-    /* Basic responsive columns */
+    
     grid-template-columns: 1fr;
 }
 
-/* 2. CARD SETUP (Assign names to children) */
+
 .business-card {
     perspective: 1000px;
     display: grid;
@@ -71,8 +71,7 @@
     transform: scale(1.05);
 }
 
-/* --- LAYOUT 1: SMALL SCREENS (320px - 640px) --- */
-/* Simple Vertical Stack */
+
 @media (max-width: 640px) {
     .business-card {
         grid-template-columns: 1fr;
@@ -85,18 +84,17 @@
     }
 }
 
-/* --- LAYOUT 2: MEDIUM SCREENS (641px - 1024px) --- */
-/* Image on Left, Text on Right */
+
 @media (min-width: 641px) and (max-width: 1024px) {
     #business-container {
         grid-template-columns: 1fr;
     }
 
-    /* Keep cards full width */
+ 
 
     .business-card {
         grid-template-columns: 200px 1fr 1fr;
-        /* Image column + 2 Text columns */
+     
         grid-template-areas:
             "img title title"
             "img addr addr"
@@ -112,12 +110,11 @@
     }
 }
 
-/* --- LAYOUT 3: LARGE SCREENS (1025px+) --- */
-/* Cards in Grid, but layout changes again */
+
 @media (min-width: 1025px) {
     #business-container {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 Cards per row */
+    
     }
 
     .business-card {
@@ -127,7 +124,7 @@
             "img desc"
             "img addr"
             "btn btn";
-        /* Button spans full width at bottom */
+        
     }
 }
 
@@ -160,7 +157,7 @@
     content: "★"; 
     color: #e67e22; 
     margin-right: 0.5rem; 
-} /* Fade-in animation */ 
+} 
 @keyframes fadeIn { 
     from { opacity: 0; 
         transform: translateY(10px); 
@@ -171,7 +168,7 @@
 to { opacity: 1; transform: translateY(0); } }
 
 #visit-message {
-    background-color: var(--primary); /* Uses your Navy color */
+    background-color: var(--primary); 
     color: var(--white);
     padding: 15px;
     margin: 20px 0;
@@ -179,5 +176,5 @@ to { opacity: 1; transform: translateY(0); } }
     text-align: center;
     font-weight: bold;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border-left: 5px solid var(--accent); /* Gold accent */
+    border-left: 5px solid var(--accent);
 }
