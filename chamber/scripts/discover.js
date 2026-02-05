@@ -7,30 +7,30 @@ const displayBusinesses = (businessesList) => {
     businessContainer.innerHTML = '';
 
     businessesList.forEach((business) => {
-        // Create Elements
+      
         let card = document.createElement('div');
         card.classList.add('business-card');
 
-        let title = document.createElement('h2'); // Requirement: h2
+        let title = document.createElement('h2'); 
         title.textContent = business.name;
 
-        let figure = document.createElement('figure'); // Requirement: figure
+        let figure = document.createElement('figure');
         let img = document.createElement('img');
         img.setAttribute('src', business.image);
         img.setAttribute('alt', business.name);
         img.setAttribute('loading', 'lazy');
         figure.appendChild(img);
 
-        let address = document.createElement('address'); // Requirement: address
+        let address = document.createElement('address'); 
         address.textContent = business.address;
 
-        let description = document.createElement('p'); // Requirement: paragraph
+        let description = document.createElement('p'); 
         description.textContent = business.description;
 
-        let button = document.createElement('button'); // Requirement: button
+        let button = document.createElement('button'); 
         button.textContent = "Learn More";
 
-        // Append in order
+      
         card.appendChild(title);
         card.appendChild(figure);
         card.appendChild(address);
