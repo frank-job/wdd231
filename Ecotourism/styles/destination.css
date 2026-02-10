@@ -1,273 +1,135 @@
-/* =========================
-   DESTINATIONS PAGE CSS
-   ========================= */
+:root {
+    --primary: #007BFF;
+    --secondary: #1D546D;
+    --accent: #5F95AD;
+    --white: #ffffff;
+    --text: #061E29;
+    --bg-header: #F3F4F4;
+    --bg-light: #eef1f5;
+    --border: #dddddd;
+    --text-muted: #555555;
+    --text-light: #cccccc;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --trans: 0.3s ease;
+}
 
-/* 1. HERO BANNER */
 .dest-hero {
-    /* Replace with your image */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1000');
-    height: 350px;
+
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax effect */
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: var(--bg-header);
+    padding: 100px 5%;
     text-align: center;
-    color: white;
 }
 
-.dest-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #FFD700; /* Gold */
-    margin-bottom: 10px;
-}
 
-.dest-hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-}
-
-/* 2. FILTER BAR */
 .filter-section {
     display: flex;
     justify-content: center;
     gap: 15px;
     padding: 30px;
-    background-color: #f4f4f4;
-    flex-wrap: wrap; /* Stacks buttons on small screens */
+    flex-wrap: wrap;
 }
 
 .filter-btn {
     padding: 10px 25px;
-    border: 2px solid #2C5E1A; /* Forest Green */
+    border: 2px solid var(--primary);
     background: transparent;
-    color: #2C5E1A;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1rem;
     transition: 0.3s;
 }
 
-.filter-btn:hover, .filter-btn.active {
-    background: #2C5E1A;
-    color: white;
-    transform: scale(1.05);
+.filter-btn.active, .filter-btn:hover {
+    background: var(--secondary);
+    color: var(--border);
 }
 
-/* 3. GRID LAYOUT */
+
 .dest-grid {
     display: grid;
-    /* Smart responsive columns */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    padding: 40px 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 2rem 10%;
 }
 
-/* 4. THE CARD STYLE */
 .dest-card {
-    position: relative; /* Needed for text overlay */
-    height: 400px; /* Fixed tall height */
-    border-radius: 15px;
-    overflow: hidden; /* Keeps image corners round */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    cursor: pointer;
-    background-color: black; /* Fallback color */
+    background: var(--bg-light);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary);
+    transition: transform 0.3s;
 }
 
-/* IMAGE */
+.dest-card:hover { transform: translateY(-8px); }
+
 .dest-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Crops nicely */
-    transition: transform 0.5s ease;
-    opacity: 0.85; /* Slightly dark so white text pops */
+    height: 220px;
+    object-fit: cover; 
+    display: block;
 }
 
-/* ZOOM EFFECT */
-.dest-card:hover img {
-    transform: scale(1.1); /* Image grows */
-    opacity: 0.6; /* Image darkens more */
+.dest-card-content { padding: 20px; }
+
+.category-tag {
+    font-size: 11px;
+    background: var(--accent);
+    color: var(--bg-light);
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
-/* BADGE (Top Left) */
-.badge {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: #D4A373; /* Earthy Gold */
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    z-index: 10;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+.dest-card h3 { margin: 10px 0; color: var(--secondary); }
 
-/* CARD INFO (Bottom Overlay) */
-.card-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.loc { color:var(--accent); font-size: 0.9rem; font-weight: bold; }
+
+.desc { font-size: 0.9rem; color: var(--primary); margin: 10px 0; }
+
+.book-btn {
     width: 100%;
-    padding: 25px;
-    color: white;
-    
-    /* Gradient behind text so it's readable */
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-    
-    transform: translateY(40px); /* Pushes description down initially */
-    transition: transform 0.4s ease;
-}
-
-.dest-card:hover .card-info {
-    transform: translateY(0); /* Slides up on hover */
-}
-
-.card-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.location {
-    color: #ddd;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-/* 5. HIDDEN DETAILS (Price & Button) */
-.hidden-details {
-    opacity: 0; /* Invisible by default */
-    transition: opacity 0.4s ease 0.1s; /* Delay slightly */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    padding-top: 15px;
-}
-
-.dest-card:hover .hidden-details {
-    opacity: 1; /* Visible on hover */
-}
-
-.hidden-details p {
-    font-weight: bold;
-    color: #FFD700;
-}
-
-.hidden-details button {
-    background-color: white;
-    color: #2C5E1A;
+    padding: 12px;
+    background: var(--primary);
+    color: var(--border);
     border: none;
-    padding: 8px 20px;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
-.hidden-details button:hover {
-    background-color: #FFD700;
-}
 
-/* MOBILE FIX */
-@media (max-width: 600px) {
-    .dest-hero h1 { font-size: 2rem; }
-    
-    /* On phone, always show details (no hover needed) */
-    .card-info { transform: translateY(0); }
-    .hidden-details { opacity: 1; }
-}
-
-/* --- NEWSLETTER SECTION --- */
 .newsletter {
-    background-color: var(--primary); /* Forest Green */
-    padding: 60px 20px;
+    background: var(--bg-light);
+    padding: 60px 10%;
     text-align: center;
-    color: white;
-    margin-top: 50px;
-}
-
-.newsletter h2 {
-    font-family: var(--font-head);
-    font-size: 2rem;
-    color: var(--secondary); /* Gold */
-    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 .newsletter-form {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
-    flex-wrap: wrap;
 }
 
-.newsletter input {
+.newsletter-form input {
     padding: 12px;
     width: 300px;
+    border: 1px solid var(--bg-header);
     border-radius: 5px;
-    border: none;
 }
 
-.newsletter button {
-    padding: 12px 30px;
-    background-color: var(--secondary);
-    color: var(--dark);
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-/* --- BOOKING MODAL (The Popup) --- */
 dialog {
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+    border-radius: 12px;
     padding: 0;
-    width: 90%;
-    max-width: 500px;
+    box-shadow: 0 0 20px var(--primary);
 }
 
-/* Darken the background when modal is open */
-dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-wrapper {
-    padding: 40px;
-    text-align: center;
-    position: relative;
-}
-
-#close-modal {
-    position: absolute;
-    top: 10px; right: 15px;
-    background: none; border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.modal-wrapper input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 20px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#destination-name {
-    color: var(--primary);
-    text-decoration: underline;
-}
+.modal-wrapper { padding: 30px; width: 400px; }
+#close-modal { float: right; cursor: pointer; border: none; background: none; font-weight: bold; }
+dialog::backdrop { background: rgba(0,0,0,0.7); }

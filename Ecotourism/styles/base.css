@@ -43,7 +43,7 @@ header {
     padding: 15px 5%;
     box-shadow: 10px 5px 5px var(--text);
     position: relative;
-    /* box-shadow: var(--shadow-sm); */
+   
     z-index: 2000;
     opacity: 1;
     position: fixed;
@@ -68,11 +68,10 @@ header {
     width: 60px;
     height: 60px;
     margin-right: 10px;
-    /* Yellow border around logo */
+   
     border-radius: 50%;
 }
 
-/* NAVIGATION LINKS */
 nav ul {
     list-style: none;
     display: flex;
@@ -81,7 +80,7 @@ nav ul {
 
 nav ul li a {
     color: var(--white);
-    /* color: var(--white); */
+    
     text-decoration: none;
     font-size: 18px;
     padding: 8px 15px;
@@ -89,33 +88,28 @@ nav ul li a {
     border-bottom: 3px solid transparent;
 }
 
-/* HOVER EFFECT: Red Background, Yellow Text */
+
 nav ul li a:hover {
     border-radius: 20px;
     background-color: var(--cta-orange);
     color: var(--black);
     box-shadow: 0 4px 10px rgba(242, 140, 40, 0.4);
     border-bottom-color: var(--cta-orange);
-    /* background-color: var(--ug-red);
-    color: var(--ug-yellow);
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(217, 0, 0, 0.4); */
+    
 }
 
-/* HAMBURGER BUTTON */
+
 #hamburgerBtn {
     display: none;
     background: none;
     border: none;
     color: var(--ug-yellow);
-    /* Yellow Icon */
+   
     font-size: 2rem;
     cursor: pointer;
 }
 
-/* =========================
-   3. SLIDER & HERO
-   ========================= */
+
 .slider-container {
     position: relative;
     height: 500px;
@@ -123,7 +117,7 @@ nav ul li a:hover {
     margin: 20px;
     border-radius: 15px;
     border: 5px solid var(--ug-black);
-    /* Frame the image */
+  
     box-shadow: 0 10px 20px var(--secondary);
 }
 
@@ -224,87 +218,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 768px) {
 
-    #hamburgerBtn {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        font-size: 1px;
-        /* height: 200px; */
-        margin-left: 30px;
-        margin-right: 20px;
-        gap: 5px;
-        background-color: var(--accent);
-        border-top: 2px solid var(--accent);
-
-
-        z-index: 1000;
-        margin: 0;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 5px;
-         /* top: 25%;
-        left: -1;
-        right: 0; */
-
-    }
-
-    nav ul.open {
-        display: flex;
-
-    }
-
-    nav li {
-        margin: 15px 0;
-    }
-
-    .slider-container {
-        height: 400px;
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 15px;
-
-    }
-
-    .text-overlay {
-
-        position: absolute;
-        width: 90%;
-        left: 5%;
-        transform: translateX(-50%);
-        bottom: 5%;
-        padding: 20px;
-        text-align: center;
-        border-left: none;
-        border-top: 5px solid var(--primary);
-        box-shadow: 0 10px 30px var(--accent-sky);
-
-    }
-
-    .text-overlay h2 {
-        font-size: 2rem;
-    }
-
-    .slider-container,
-    .slider img {
-        height: 400px;
-        animation: kenBurns 10s ease-in-out infinite alternate;
-    }
-}
-
-/* ANIMATION KEYFRAMES */
 @keyframes fadeInUp {
     from {
         opacity: 0;
