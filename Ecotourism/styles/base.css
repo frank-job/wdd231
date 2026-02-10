@@ -194,7 +194,7 @@ nav ul li a:hover {
 .text-overlay p {
 
     font-weight: 200;
-    font-size: 1.1rem bold;
+    font-size: 1.1rem ;
     color: var(--black);
     margin-bottom: 25px;
     line-height: 1.6;
@@ -238,7 +238,7 @@ nav ul li a:hover {
         flex-direction: row;
         position: absolute;
         top: 15%;
-        left: -1;
+        /* left: -1; */
         right: 0;
         /* bottom: 0; */
         /* width: 100%; */
@@ -298,6 +298,7 @@ nav ul li a:hover {
     .slider-container,
     .slider img {
         height: 400px;
+         animation: kenBurns 10s ease-in-out infinite alternate;
     }
 }
 
@@ -324,9 +325,9 @@ nav ul li a:hover {
     }
 }
 
-.slider img {
+/* .slider img {
     animation: kenBurns 10s ease-in-out infinite alternate;
-}
+} */
 
 
 
@@ -756,7 +757,7 @@ footer p, footer div {
   text-align: center;
   background-color: var(--bg-light);
   border-radius: 8px;
-  box-shadow: var(--primary);
+  box-shadow: 5px 3px 6px var(--primary);
   margin: 30px auto;
   max-width: 600px;
 }
