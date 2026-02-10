@@ -82,7 +82,7 @@
 }
 
 .submit-btn:hover {
-    background-color: va;
+    background-color: var(--accent);
     color: var(--primary-blue);
 }
 
