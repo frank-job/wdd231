@@ -26,17 +26,19 @@
     <meta property="og:url" content="https://byui-cse.github.io/wdd231-ww-course/week02/assignment-02.html" />
     <meta property="og:type" content="website" />
 
-    <script src="script/body.js" defer></script>
-    <!-- <script src="scripts/weather.js" defer></script> -->
-    <script src="script/navigation.js" defer></script>
+    <script src="scripts/body.js" defer></script>
+   
+    <script src="scripts/navigation.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
-    <!-- <link rel="stylesheet" href="styles/lager.css"> -->
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+    
 </head>
 <body>
      <header>
 
         <div class="logo">
-            <img width="100" src="images/logo.png" alt="Eco Tourism Logo">
+            <img width="100" src="images/logo.webp" alt="Eco Tourism Logo">
             <span>Eco Tourism</span>
 
 
@@ -57,47 +59,61 @@
     </header>
     <main>
        
-
-            <section class="contact-section">
+<section class="contact-section">
     <div class="contact-container">
-        <div class="contact-info">
-            <h2>Get in <span>Touch</span></h2>
-            <p>Have questions about our eco-tours? We're here to help you plan your journey.</p>
-            
-            <div class="info-item">
-                <span>📍</span>
-                <p>Jinja, Uganda</p>
+       
+        <div id="formContainer">
+            <div class="contact-info">
+                <h1>Get in <span>Touch</span></h1>
+                <p>Have questions about our eco-tours? We're here to help you plan your journey.</p>
+                <div class="info-item">
+                    <span>📍</span>
+                    <p>Jinja, Uganda</p>
+                </div>
             </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Interested In</label>
+                    <select id="subject" name="subject">
+                        <option value="Gorilla Trekking">Gorilla Trekking</option>
+                        <option value="Savanna Safari">Savanna Safari</option>
+                        <option value="Adventure Sports">Adventure Sports</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
 
-        <form id="contactForm" class="contact-form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
+       
+        <div id="successMessage">
+            <div style="font-size: 50px;">🎉</div>
+            <h1 >Congratulations!</h1>
+            <p>Your inquiry for <strong id="displaySubject"></strong> has been received.</p>
+            
+            <div id="userDataDisplay">
+               
             </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Interested In</label>
-                <select id="subject" name="subject">
-                    <option value="gorilla">Gorilla Trekking</option>
-                    <option value="safari">Savanna Safari</option>
-                    <option value="adventure">Adventure Sports</option>
-                    <option value="other">General Inquiry</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+            
+            <button onclick="location.reload()" class="submit-btn">Send Another Request</button>
+        </div>
     </div>
 </section>
     </main>

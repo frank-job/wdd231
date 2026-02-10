@@ -1,3 +1,17 @@
+:root {
+    --primary: #007BFF;
+    --secondary: #1D546D;
+    --accent: #5F95AD;
+    --white: #ffffff;
+    --text: #061E29;
+    --bg-header: #F3F4F4;
+    --bg-light: #eef1f5;
+    --border: #dddddd;
+    --text-muted: #555555;
+    --text-light: #cccccc;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --trans: 0.3s ease;
+}
 
 .contact-section {
     padding: 80px 5%;
@@ -56,8 +70,9 @@
 }
 
 .submit-btn {
-    background-color: var(--primary-blue);
-    color: white;
+    background-color: var(--primary);
+    /* background-color: var(--primary-blue); */
+    color: var(--border);
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -67,14 +82,34 @@
 }
 
 .submit-btn:hover {
-    background-color: var(--accent-blue);
+    background-color: va;
     color: var(--primary-blue);
 }
 
-/* Mobile Standard (Stacking) */
+
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
         padding: 20px;
     }
+}
+
+
+#successMessage {
+    animation: fadeIn 0.5s ease-out;
+    display: none; 
+    text-align: center;
+     padding: 40px;
+}
+#successMessage h1 {
+    color: var(--secondary);
+    margin-top: 20px;
+}
+#userDataDisplay {
+    background: var(--bg-header); 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+    text-align: left; 
+    border: 1px solid var(--bg-light);
 }
