@@ -1,0 +1,23 @@
+[
+    { 
+        "img": "images/realsun.jpg", 
+        "title": "Golden Horizons", 
+        "desc": "Experience the magic of a pristine sunset where the sky meets the earth in a brilliant display of gold and amber. Our sunset eco-tours are designed to let you witness nature's daily masterpiece while supporting sustainable land management. Breathe in the tranquility and reconnect with the rhythm of the wild as the day turns to dusk.",
+        "btnText": "View the Magic",
+        "link": "discover.html"
+    },
+    { 
+        "img": "images/mountain.jpg", 
+        "title": "Peak of Adventure", 
+        "desc": "Stand tall amongst the giants. Our guided mountain expeditions take you through ancient trails and rocky ridges to reach breathtaking summits. We practice 'Leave No Trace' tourism to protect these fragile alpine ecosystems, ensuring that the only thing you leave behind are footprints and the only thing you take are memories of the high peaks.",
+        "btnText": "Start the Climb",
+        "link": "directory.html"
+    },
+    { 
+        "img": "images/garriffe.jpg", 
+        "title": "Gentle Giants of the Savanna", 
+        "desc": "Journey into the heart of the grasslands to meet the world's tallest mammals in their natural habitat. Learn about our dedicated giraffe conservation projects that help protect the Nubian species from extinction. Your safari contributes directly to community-led anti-poaching efforts, helping these majestic creatures roam free for generations to come.",
+        "btnText": "Meet the Giants",
+        "link": "join.html"
+    }
+]

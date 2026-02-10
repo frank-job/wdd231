@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "place": "Murchison Falls National Park",
+    "image": "images/murchison.jpg",
+    "description": "Witness the world's most powerful waterfall as the Nile squeezes through a 7-meter gorge.",
+    "type": "featured"
+  },
+  {
+    "id": 2,
+    "place": "Bwindi Impenetrable Forest",
+    "image": "images/bwindi.jpg",
+    "description": "A UNESCO World Heritage site and home to half of the world's remaining mountain gorillas.",
+    "type": "featured"
+  },
+  {
+    "id": 3,
+    "place": "Queen Elizabeth National Park",
+    "image": "images/queen_elizabeth.jpg",
+    "description": "Famous for tree-climbing lions and the scenic Kazinga Channel boat safari.",
+    "type": "featured"
+  },
+  {
+    "id": 4,
+    "place": "Kidepo Valley National Park",
+    "image": "images/kidepo.jpg",
+    "description": "Uganda's most isolated wilderness, offering stunning savanna landscapes and rare wildlife.",
+    "type": "gallery"
+  },
+  {
+    "id": 5,
+    "place": "Rwenzori Mountains",
+    "image": "images/rwenzori.webp",
+    "description": "The legendary 'Mountains of the Moon,' featuring permanent snow-capped peaks on the equator.",
+    "type": "gallery"
+  },
+  {
+    "id": 6,
+    "place": "Source of the Nile - Jinja",
+    "image": "images/rive nile.webp",
+    "description": "The adventure capital of East Africa, where the mighty Nile begins its journey to the Mediterranean.",
+    "type": "gallery"
+  }
+
+]

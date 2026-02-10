@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #2c5e1a; */
+    background-color: red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding-top: 40px;
+    gap: 40px;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    color: yellow;
+    
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: #0d140a 5px 7px 7px;
+
+}
+
+nav ul li a:hover {
+    /* background-color: #45a049; */
+    background-color: red;
+    /* color: white; */
+    color: black;
+    border-radius: 5px;
+    box-shadow: #0d140a 0px 0px 10px;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    color: white;
+    margin-right: 10px;
+}
+
+.logo.span {
+    padding-bottom: 25px;
+}
+
+
+#hamburgerBtn {
+    padding: 10px 20px;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    display: none;
+   
+}
+
+
+
+@media (max-width: 768px) {
+    #hamburgerBtn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+      
+        flex-direction: column;
+        position: relative;
+        top: 20%;
+        left: 0;
+        width: 100%;
+
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+   
+    nav ul.open {
+        display: flex;
+        background-color: #2c5e1a;
+       
+        position: absolute;
+        top: 80px;
+      
+        left: 0;
+        width: 100%;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav li {
+        margin: 15px 0;
+    }
+
+    .logo {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+
+    }
+
+}
+
+
+
+
+
+.slider-container {
+    position: relative;
+   height: 500px;
+    /* width: 100%; */
+ 
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+
+    border-bottom: 10px solid yellow;
+}
+
+.slider img {
+    width: 100%;
+    /* height: 100%; */
+  
+    object-fit: cover;
+   
+    transform: scale(1.05);
+   
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+.text-overlay {
+    position: absolute;
+    bottom: 20%;
+
+    left: 10%;
+    max-width: 600px;
+  
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: auto;
+    border-left: 5px solid #4CAF50;
+   
+}
+
+.text-overlay:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  
+}
+/* 1. Nice Edit for H2 (Headline) */
+.text-overlay h2 {
+    margin: 0 0 15px;
+    font-size: 3rem; /* Larger for impact */
+    font-weight: 800;
+    text-transform: capitalize;
+    color: rgb(149, 149, 7); /* White is cleaner over dark overlays */
+    line-height: 1.1;
+    font-style: normal; /* Italic can sometimes look 'cheap' if used too much */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    
+    /* The "Eco" Animation */
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* 2. Style for Paragraph (Description) */
+.text-overlay p {
+    font-size: 1.1rem;
+    color: white;
+    max-width: 600px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    animation: fadeInUp 1.2s ease-out 0.3s forwards; /* 0.3s delay */
+    /* opacity: 0; Starts hidden for animation */
+}
+
+/* 3. Style for Link (Button) */
+.text-overlay a {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: red; 
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Pill shape is more organic */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: fadeInUp 1.2s ease-out 0.6s forwards; /* 0.6s delay */
+    /* opacity: 1; */
+}
+
+/* Interaction: The Hover Effect */
+.text-overlay a:hover {
+    background-color: #40916c;
+    transform: translateY(-3px) scale(1.05); /* Lifts up slightly */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+@media (max-width: 768px) {
+
+  
+    #hamburgerBtn {
+        display: block;
+        color: white;
+        background: transparent;
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+       
+        left: 0;
+        width: 100%;
+        background-color: #2c5e1a;
+     
+        padding: 20px 0;
+        z-index: 1000;
+        margin: 0;
+        
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+   
+    .slider-container,
+    .slider img {
+        height: 400px;
+    }
+
+   
+    .text-overlay {
+        width: 90%;
+        
+        left: 50%;
+        transform: translateX(-50%);
+    
+        bottom: 10%;
+       
+        padding: 20px;
+      
+        text-align: center;
+       
+        position: absolute;
+        z-index: 2;
+    }
+
+    .text-overlay h2 {
+        font-size: 1.5rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        
+       
+    }
+   
+}
+
+
+  {
+    "id": 7,
+    "place": "Lake Bunyonyi",
+    "image": "images/lake.webp",
+    "description": "Known as the place of many little birds, this is one of the deepest and most beautiful lakes in Africa.",
+    "type": "gallery"
+  },
+  {
+    "id": 8,
+    "place": "Kibale National Park",
+    "image": "images/kibale.webp",
+    "description": "The primate capital of the world, hosting 13 species of primates including chimpanzees.",
+    "type": "gallery"
+  },
+  {
+    "id": 9,
+    "place": "Sipi Falls",
+    "image": "images/sipifall.webp",
+    "description": "A series of three stunning waterfalls situated on the edge of Mount Elgon National Park.",
+    "type": "gallery"
+  },
+  {
+    "id": 10,
+    "place": "Zion Rhino Sanctuary",
+    "image": "images/Rhino.webp",
+    "description": "The only place in Uganda where you can trek wild southern white rhinos on foot.",
+    "type": "gallery"
+  }

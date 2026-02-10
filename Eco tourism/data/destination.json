@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Bwindi Impenetrable Forest",
+        "category": "wildlife",
+        "badge": "🦍 Gorilla Trekking",
+        "location": "Uganda",
+        "price": "$700 / day",
+        "image": "https://images.unsplash.com/photo-1544669866-e822003c2005?q=80&w=800"
+    },
+    {
+        "id": 2,
+        "name": "Source of the Nile",
+        "category": "water",
+        "badge": "🚣 White Water",
+        "location": "Jinja, Uganda",
+        "price": "$150 / day",
+        "image": "https://images.unsplash.com/photo-1517482481788-b2a6f87d4943?q=80&w=800"
+    },
+    {
+        "id": 3,
+        "name": "Rwenzori Mountains",
+        "category": "hiking",
+        "badge": "🏔️ Mountain Peak",
+        "location": "Kasese",
+        "price": "$300 / day",
+        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800"
+    },
+    {
+        "id": 4,
+        "name": "Murchison Falls",
+        "category": "water",
+        "badge": "🌊 Waterfall",
+        "location": "Masindi",
+        "price": "$100 / day",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800"
+    },
+    {
+        "id": 5,
+        "name": "Queen Elizabeth Park",
+        "category": "wildlife",
+        "badge": "🦁 Safari",
+        "location": "Kasese",
+        "price": "$200 / day",
+        "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=800"
+    },
+    {
+        "id": 6,
+        "name": "Mount Elgon",
+        "category": "hiking",
+        "badge": "🥾 Hiking",
+        "location": "Mbale",
+        "price": "$80 / day",
+        "image": "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?q=80&w=800"
+    }
+]
