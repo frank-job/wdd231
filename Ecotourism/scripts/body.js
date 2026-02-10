@@ -22,7 +22,7 @@ function displayImage(imageData) {
         slideDiv.innerHTML = `
             <img src="${image.img}" alt="${image.title}" loading="lazy">
             <div class="text-overlay">
-                <h2>${image.title}</h2>
+                <h1>${image.title}</h1>
                 <p>${image.desc}</p> 
                 <a href="${image.link}" class="learn-more">${image.btnText}</a>
             </div>
