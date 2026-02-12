@@ -6,7 +6,6 @@ async function fetchImages() {
         const response = await fetch('data/slider.json');
         const data = await response.json();
         
-        // We call the next functions here inside the "try"
         displayImage(data);
         showSlides(); 
     } catch (error) {

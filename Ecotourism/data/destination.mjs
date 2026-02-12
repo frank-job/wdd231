@@ -3,7 +3,7 @@ export const destinations = [
         "id": 1,
         "name": "Bwindi Gorilla Trek",
         "category": "wildlife",
-        "image": "images/bwindi.jpg",
+        "image": "images/bwindi.webp",
         "description": "Encounter the majestic mountain gorillas in their natural habitat.",
         "location": "Bwindi Forest",
         "price": "$600"
@@ -12,7 +12,7 @@ export const destinations = [
         "id": 2,
         "name": "Source of the Nile",
         "category": "water",
-        "image": "images/rive nile.webp",
+        "image": "images/River Nile.webp",
         "description": "Experience the world's longest river where it begins in Jinja.",
         "location": "Jinja, Uganda",
         "price": "$50"
@@ -21,7 +21,7 @@ export const destinations = [
         "id": 3,
         "name": "Rwenzori Hiking",
         "category": "hiking",
-        "image": "images/rwenzori.webp",
+        "image": "images/Rwenzori.webp",
         "description": "Climb the fabled Mountains of the Moon peaks.",
         "location": "Kasese",
         "price": "$250"
@@ -30,7 +30,7 @@ export const destinations = [
         "id": 4,
         "name": "Murchison Falls Safari",
         "category": "wildlife",
-        "image": "images/mu.jpg",
+        "image": "images/murchison fall.webp",
         "description": "Witness the world's most powerful waterfall and giants.",
         "location": "Murchison Park",
         "price": "$150"
@@ -39,7 +39,7 @@ export const destinations = [
         "id": 5,
         "name": "Sipi Falls Adventure",
         "category": "hiking",
-        "image": "images/sipifall.webp",
+        "image": "images/sipi.webp",
         "description": "Three stunning waterfalls tucked in the foothills of Mt. Elgon.",
         "location": "Kapchorwa",
         "price": "$40"
@@ -48,7 +48,7 @@ export const destinations = [
         "id": 6,
         "name": "White Water Rafting",
         "category": "water",
-        "image": "images/murchison.jpg",
+        "image": "images/rapids.webp",
         "description": "Grade 5 rapids for the ultimate adrenaline rush.",
         "location": "River Nile",
         "price": "$140"
@@ -57,7 +57,7 @@ export const destinations = [
         "id": 7,
         "name": "Queen Elizabeth Park",
         "category": "wildlife",
-        "image": "images/queen_elizabeth.jpg",
+        "image": "images/Queen Elizabeth.webp",
         "description": "See tree-climbing lions and the Kazinga Channel.",
         "location": "Kasese District",
         "price": "$100"
@@ -66,7 +66,7 @@ export const destinations = [
         "id": 8,
         "name": "Lake Bunyonyi",
         "category": "water",
-        "image": "images/lake.webp",
+        "image": "images/lake bunyonyi.webp",
         "description": "Canoeing on the deepest and most beautiful lake.",
         "location": "Kabale",
         "price": "$30"
@@ -75,7 +75,7 @@ export const destinations = [
         "id": 9,
         "name": "Mgahinga Volcanoes",
         "category": "hiking",
-        "image": "images/maghrita.webp",
+        "image": "images/Mgahinga Volcanoes.webp",
         "description": "Track golden monkeys and hike volcanic peaks.",
         "location": "Kisoro",
         "price": "$500"
@@ -84,7 +84,7 @@ export const destinations = [
         "id": 10,
         "name": "Kidepo Valley Trek",
         "category": "wildlife",
-        "image": "images/kidepo.jpg",
+        "image": "images/kidepo valley.webp",
         "description": "Explore the most remote and beautiful savanna park.",
         "location": "Kaabong",
         "price": "$200"
@@ -93,7 +93,7 @@ export const destinations = [
         "id": 11,
         "name": "Ssese Islands",
         "category": "water",
-        "image": "images/ssese.webp",
+        "image": "images/ssese island.webp",
         "description": "Relax on sandy beaches of Lake Victoria islands.",
         "location": "Kalangala",
         "price": "$80"
@@ -102,7 +102,7 @@ export const destinations = [
         "id": 12,
         "name": "Mt. Elgon Hike",
         "category": "hiking",
-        "image": "images/elogon.webp",
+        "image": "images/mt Elgon.webp",
         "description": "Hike to the largest volcanic base in the world.",
         "location": "Mbale",
         "price": "$120"
@@ -111,7 +111,7 @@ export const destinations = [
         "id": 13,
         "name": "Ziwa Rhino Trek",
         "category": "wildlife",
-        "image": "images/rhoinp.webp",
+        "image": "images/Ziwa Rhino.webp",
         "description": "Track white rhinos on foot in the sanctuary.",
         "location": "Nakasongola",
         "price": "$50"
@@ -120,7 +120,7 @@ export const destinations = [
         "id": 14,
         "name": "Semuliki Hot Springs",
         "category": "water",
-        "image": "images/hotsrping.webp",
+        "image": "images/hotspring.webp",
         "description": "Visit the famous Sempaya boiling hot springs.",
         "location": "Bundibugyo",
         "price": "$40"
@@ -129,7 +129,7 @@ export const destinations = [
         "id": 15,
         "name": "Kibale Chimps",
         "category": "wildlife",
-        "image": "images/golloari.webp",
+        "image": "images/chimpanzee.webp",
         "description": "Track chimpanzees in the primate capital of the world.",
         "location": "Fort Portal",
         "price": "$200"

@@ -1,14 +1,14 @@
-export function renderCards(data, gridElement) {
+
+import { destinations } from '../data/destination.mjs';
+
+
+function renderCards(data, gridElement) {
     if (!gridElement) return;
-    
     gridElement.innerHTML = '';
     
-    // Array Method: forEach
     data.forEach(dest => {
         const card = document.createElement('div');
         card.className = 'dest-card';
-        
-        // Template Literals for dynamic content
         card.innerHTML = `
             <img src="${dest.image}" alt="${dest.name}" loading="lazy">
             <div class="dest-card-content">
@@ -19,34 +19,32 @@ export function renderCards(data, gridElement) {
                     <p>📍 ${dest.location}</p>
                     <p class="price"><strong>${dest.price}</strong></p>
                 </div>
+                <!-- Button has a data-name to identify the trip -->
                 <button class="book-btn" data-name="${dest.name}">Book Now</button>
             </div>
         `;
         gridElement.appendChild(card);
     });
+
+ 
+    attachModalListeners();
 }
 
-// Import from the .mjs and the render module
-import { destinations } from '../data/destination.mjs';
-// import { renderCards } from './modules/render.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('dest-grid');
     const filterButtons = document.querySelectorAll('.filter-btn');
 
-    // 1. Initial Render using the imported constant
+   
     renderCards(destinations, grid);
 
-    // 2. Filter Logic (Using Array Method: filter)
+   
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class from others, add to this one
             document.querySelector('.filter-btn.active').classList.remove('active');
             btn.classList.add('active');
-
-            const category = btn.getAttribute('data-filter');
             
-            // Filter the imported destinations array
+            const category = btn.getAttribute('data-filter');
             const filteredData = category === 'all' 
                 ? destinations 
                 : destinations.filter(item => item.category === category);
@@ -54,4 +52,40 @@ document.addEventListener('DOMContentLoaded', () => {
             renderCards(filteredData, grid);
         });
     });
+});
+
+
+const modal = document.getElementById('booking-modal');
+const closeModal = document.getElementById('close-modal');
+const modalTitle = document.getElementById('destination-name');
+const form = modal.querySelector('form');
+
+function attachModalListeners() {
+    const bookButtons = document.querySelectorAll('.book-btn');
+    
+    bookButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const tripName = e.target.getAttribute('data-name');
+            modalTitle.textContent = tripName;
+            modal.showModal(); 
+        });
+    });
+}
+
+
+closeModal.addEventListener('click', () => {
+    modal.close();
+});
+
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.close();
+    }
+});
+
+
+form.addEventListener('submit', () => {
+   
+    alert(`Thank you! Your booking for ${modalTitle.textContent} has been received. Check your email.`);
 });

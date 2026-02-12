@@ -24,23 +24,22 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: var(--border);
-
+    overflow-x: hidden;
 }
 
 main {
     padding: 20px;
-    max-width: 1200px;
+    
     margin-top: 80px;
 }
 
 header {
-    margin-left: 10px;
-    margin-right: 10px;
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
-    padding: 15px 5%;
+    padding: 15px 5px;
     box-shadow: 10px 5px 5px var(--text);
     position: relative;
    
@@ -54,7 +53,7 @@ header {
 
 }
 
-/* LOGO */
+
 .logo {
     color: var(--white);
     font-size: 24px;
@@ -114,7 +113,7 @@ nav ul li a:hover {
     position: relative;
     height: 500px;
     overflow: hidden;
-    margin: 20px;
+    /* margin: 20px; */
     border-radius: 15px;
     border: 5px solid var(--ug-black);
   
@@ -125,8 +124,10 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
     transition: transform 0.5s ease;
 }
+
 
 .slider img:hover {
     transform: scale(1.05);
@@ -214,7 +215,7 @@ nav ul li a:hover {
     background-color: transparent;
     color: var(--bg-header);
 
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 
@@ -222,7 +223,7 @@ nav ul li a:hover {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(5px);
     }
 
     to {
@@ -237,7 +238,7 @@ nav ul li a:hover {
     }
 
     to {
-        transform: scale(1.15);
+        transform: scale(1.03);
     }
 }
 
