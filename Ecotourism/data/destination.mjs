@@ -3,7 +3,7 @@ export const destinations = [
         "id": 1,
         "name": "Bwindi Gorilla Trek",
         "category": "wildlife",
-        "image": "images/bwindi.webp",
+        "image": "images/Bwindi.webp",
         "description": "Encounter the majestic mountain gorillas in their natural habitat.",
         "location": "Bwindi Forest",
         "price": "$600"
